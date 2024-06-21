@@ -1,0 +1,859 @@
+/**
+* File Type: Custom CSS
+* Author: Ramen Biswas
+* Author Website: http://www.___________________
+* Author Email: printrb72@gmail.com
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #53545A;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  color: var(--primaryColor);
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}linear
+ol,
+ul,
+li {
+  list-style-type: none;
+}
+
+:root{
+    --headingFontFamily: "Oswald", sans-serif;
+    --primaryColor: #161616;
+    --commonBtn:#FFBB00;
+    --commonBtnHover:#001659;
+    --borderDelete: 1px dotted red;
+}
+
+/* Common CSS Started */
+.commonBtn {
+    font-family: var(--headingFontFamily);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    background-color: var(--commonBtn);
+    padding: 21px 38px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.commonBtn:hover{
+    color: #fff;
+    background-color: var(--commonBtnHover);
+}
+.pageHeadding{
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.sectionTitle{
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+/* Common CSS Ended */
+
+/* Header Section Started */
+/* #header{
+    background: url(../images/banner.jpg);
+    background-size: 270%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    padding: 20px 85px;
+} */
+#header {
+  background: url(../images/banner.jpg);
+  background-size: 270%;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  padding: 20px 85px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.logoHead{
+    width: 144px;
+    height: 44px;
+}
+.nav{
+  gap: 140px;
+}
+.mainMenuItem{
+    padding: 25px 20px;
+}
+.mainMenuItemText{
+    font-family: var(--headingFontFamily);
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.mainMenuItemText:hover{
+    color: var(--commonBtn);
+}
+/* Header Section Ended */
+
+/* Banner CSS Started */
+#banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 310px;
+}
+#banner .pageHeadding{
+  color: #fff;
+  margin-bottom: 60px;
+}
+.bannerAsideWrapper{
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -moz-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  -o-transform: rotate(-90deg) translateY(-50%);
+}
+.bannerItems{
+  font-family: var(--headingFontFamily);
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bannerAside{
+  margin: 0;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+.bannerAsideWrapper {
+  margin: 0;
+  position: absolute;
+  left: -100px;
+  top: -160px;
+}
+/* Banner CSS Ended */
+
+/* OUR AGENCY CSS Started */
+.agencyImg {
+  width: 590px;
+}
+.year{
+  font-size: 50px;
+  font-weight: 600;
+  color: #001659;
+}
+.agencyPlay i{
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 50px;
+  color: var(--commonBtn);
+  border: 1px solid var(--commonBtn);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.agencyToolsItems li{
+  line-height: 2;
+  position: relative;
+}
+.agencyToolsItems li i{
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--commonBtn);
+  margin-right: 8px;
+  border: 1px solid var(--commonBtn);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* OUR AGENCY CSS Ended */
+
+/* SERVICE CSS Started */
+#service{
+  background-color: var(--primaryColor);
+  padding: 100px 0;
+}
+#service .card{
+  background: #1F2124;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+#service .card::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #FFC21A;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+#service .card::before {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  content: "";
+  background-color: #FFBB00;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 75% 0, 36% 100%, 0% 100%);
+  clip-path: polygon(0 0, 75% 0, 36% 100%, 0% 100%);
+}
+#service .card:hover::before {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  z-index: -1;
+}
+
+#service .card:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+#service .sectionTitle{
+  color: #fff;
+}
+.serviceCardFirstPara{
+  color: #fff;
+}
+.serviceCardHeadImage{
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+.serviceNumber{
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF4D;
+  position: relative;
+  margin-top: -20px;
+  padding-right: 10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.serviceNumber::after{
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: var(--primaryColor);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+  -webkit-transform: translate(100%, -50%);
+  -moz-transform: translate(100%, -50%);
+  -ms-transform: translate(100%, -50%);
+  -o-transform: translate(100%, -50%);
+  visibility: hidden;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.serviceCardTitle{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.serviceCardPara{
+  color: #EEE;
+  margin: 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+/* .card:hover{
+  background-color: var(--commonBtn);
+} */
+.card:hover .serviceNumber{
+  color: var(--primaryColor);
+}
+.card:hover .serviceCardTitle{
+  color: var(--primaryColor);
+}
+.card:hover .serviceCardPara{
+  color: var(--primaryColor);
+}
+.card:hover .serviceNumber::after{
+  visibility: visible;
+}
+/* SERVICE CSS Ended */
+
+/* BRAND CSS Started */
+.skill span{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  position: relative;
+}
+.skill span:nth-child(1)::after{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: var(--commonBtn);
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.skill span:nth-child(2)::after{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: var(--commonBtn);
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.brandSkillPara::before{
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--commonBtn);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.globalClientTitle{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  background: #fff;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.brandGlobalClientLogo{
+  width: 85px;
+  height: 85px;
+}
+.brandImage{
+  width: 490px;
+  object-fit: cover;
+  align-items: self-end;
+}
+.brandImageOverlay {
+  display: inline-block;
+  background: var(--commonBtn);
+  padding: 20px 40px;
+  margin: 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  -webkit-transform: translate(30%, -50%) rotate(-90deg);
+  -moz-transform: translate(-50%, -50%) rotate(-90deg);
+  -ms-transform: translate(-50%, -50%) rotate(-90deg);
+  -o-transform: translate(-50%, -50%) rotate(-90deg);
+}
+.brandImageOverlay span{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primaryColor);
+  text-transform: capitalize;
+  margin: 0;
+}
+.brndImageOverlayTitle{
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--primaryColor);
+  margin: 0;
+}
+/* BRAND CSS Ended */
+
+/* TEAM CSS Started */
+#team{
+  background: #f6f6f6;
+  position: relative;
+  overflow: hidden;
+}
+#team::before{
+  width: 550px;
+  height: 550px;
+  background: #FFF;
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: -9%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#team::after{
+  width: 146px;
+  height: 146px;
+  background: var(--commonBtn);
+  content: "";
+  position: absolute;
+  left: 6%;
+  top: 13%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* .teamMembers{
+  display: inline-flex;
+} */
+.teamMemberImg{
+  width: 38px;
+  height: 38px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+}
+.teamMemberImg:nth-child(2){
+  margin-left: -10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.teamMemberImg:nth-child(3){
+  margin-left: -10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.teamMemberImg:nth-child(4){
+  margin-left: -10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.teamMembers:hover .teamMemberImg:nth-child(2){
+  margin-left: 3px;
+}
+.teamMembers:hover .teamMemberImg:nth-child(3){
+  margin-left: 3px;
+}
+.teamMembers:hover .teamMemberImg:nth-child(4){
+  margin-left: 3px;
+}
+
+.teamMemberOverlay{
+  background: rgba(255, 187, 0, 0.70);
+  opacity: 0;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.teamMemberFullImageWrapper:hover .teamMemberOverlay{
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+  -webkit-transform: scale(1) rotate(360deg);
+  -moz-transform: scale(1) rotate(360deg);
+  -ms-transform: scale(1) rotate(360deg);
+  -o-transform: scale(1) rotate(360deg);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.teamMemberOverlay h4{
+  font-size: 22px;
+  font-weight: 700;
+}
+.teamMemberOverlay p{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+
+.socialMedia i{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--commonBtnHover);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.socialMedia i:hover{
+  color: #fff;
+  cursor: pointer;
+  margin-top: -10px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* TEAM CSS Ended */
+
+/* PROJECT CSS Started */
+.projectImageContent{
+  width: 87%;
+  display: inline-block;
+  background: #FFF;
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+  opacity: 0;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+.projectImageTitle{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+}
+.projectImageContent i{
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  color: #9F9F9F;
+  border: 1px solid #EEEEEE;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.projectImageContent i:hover{
+  color: var(--commonBtn);
+  border: 1px solid var(--commonBtn);
+  cursor: pointer;
+}
+.projectImageWrapper{
+  overflow: hidden;
+}
+.projectImageWrapper:hover .projectImageContent{
+  opacity: 1;
+  bottom: 0;
+}
+/* PROJECT CSS Ended */
+
+/* FEEDBACK CSS Started */
+.quote{
+  width: 58px;
+  height: 44px;
+}
+.quotePara{
+  font-size: 28px;
+  line-height: 1.5;
+  font-style: italic;
+}
+.quoteAuthor{
+  position: relative;
+}
+.quoteAuthor::after{
+  content: "";
+  width: 55px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.feedbackImageDesign{
+  position: relative;
+}
+.feedbackImageDesign::before{
+  content: "";
+  width: 465px;
+  height: 465px;
+  background-color: #f8f8f8;
+  position: absolute;
+  left: -25%;
+  top: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+}
+.feedbackImage{
+  width: 385px;
+}
+/* FEEDBACK CSS Ended */
+
+/* DECLARATION CSS Started */
+#declaration{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/declaration_image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#declaration .sectionTitle{
+  color: #fff;
+}
+.projectNasme{
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.declarationSupportWrapper{
+  background-color: var(--commonBtn);
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+.declarationImage{
+  width: 70px;
+}
+.contactNumber{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primaryColor);
+}
+/* DECLARATION CSS Ended */
+
+/* FAQ CSS Started */
+/* .faqImage{
+  width: 488px;
+} */
+.faqWrapper{
+  height: 825px;
+  background-color: #FFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#faq .sectionTitle{
+  line-height: 1.5;
+  color: #001659;
+}
+.accordion-button:not(.collapsed) {
+  padding: 24px 20px;
+}
+.accordion-button {
+  padding: 24px 20px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #EEE;
+}
+.accordion-button:focus {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);;
+}
+/* FAQ CSS Ended */
+
+/* Contact CSS Started */
+#contact{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../images/Contact_Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+#contact .sectionTitle{
+  color: #FFF;
+  line-height: 1.5;
+}
+/* Contact CSS Ended */
+
+/* NEWS CSS Started */
+#news .card{
+  background: #FBFBFB;
+}
+#news .card-body span{
+  font-family: var(--headingFontFamily);
+  font-size: 14px;
+  font-weight: 400;
+}
+#news .card-body span i{
+  margin-right: 5px;
+}
+#news .card-body .card-title{
+  font-family: var(--headingFontFamily);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--commonBtnHover);
+  text-transform: uppercase;
+}
+.newsCardPara{
+  font-size: 14px;
+  color: #53545A;
+}
+.newsCardPara i{
+  margin-right: 5px;
+}
+/* NEWS CSS Ended */
+
+/* FOOTER CSS Started */
+#footer{
+  background: #171717;
+}
+
+.footerItem{
+  text-transform: capitalize;
+  color: #9B9B9B;
+  padding: 8px 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.footerItem:hover{
+  color: #FFF;
+}
+.footerTitle{
+  font-size: 18px;
+  color: #FFF;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+}
+.form-control i{
+  color: var(--commonBtn);
+}
+input{
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+.footerBottomText{
+  font-size: 16px;
+  color: #FFF;
+}
+.footerBottomText span{
+  color: var(--commonBtn);
+}
+/* FOOTER CSS Ended */
